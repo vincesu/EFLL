@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.framework.entity">
+	<class
+		name="SysUser"
+		table="sys_user"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="uid"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Username"
+			column="username"
+			type="string"
+			not-null="true"
+			length="16"
+		/>
+		<property
+			name="Pwd"
+			column="pwd"
+			type="string"
+			not-null="true"
+			length="80"
+		/>
+		<property
+			name="RoleId"
+			column="role_id"
+			type="java.lang.Long"
+			not-null="true"
+			length="19"
+		/>
+		<property
+			name="Reserved"
+			column="reserved"
+			type="string"
+			not-null="false"
+			length="50"
+		/>
+		<property
+			name="JoinedTime"
+			column="joinedTime"
+			type="date"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="LastLoginTime"
+			column="lastLoginTime"
+			type="date"
+			not-null="false"
+			length="10"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

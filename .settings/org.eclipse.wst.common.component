@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EFLL">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/web"/>
+        <property name="context-root" value="EFLL"/>
+        <property name="java-output-path" value="/EFLL/build/classes"/>
+    </wb-module>
+</project-modules>

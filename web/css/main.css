@@ -1,0 +1,161 @@
+@CHARSET "UTF-8";
+
+body {
+	font-size: 12px;
+	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+}
+
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: #8DB2E3;
+}
+
+.navigation {
+	float: left;
+	width: 17%;
+}
+
+.mainpanel {
+	float: right;
+	width: 83%;
+	color: rgb(30, 57, 91);
+}
+
+.footer {
+	clear: both;
+	height: 50px;
+	width: 100%;
+	background-color: #8DB2E3;
+}
+
+fieldset {
+	border: 1px solid #8DB2E3;
+	margin: 8px;
+/*	margin-left: 8px;
+	margin-right: 8px;	*/
+}
+
+legend {
+    margin-left: 10px;
+    padding: 0px 10px;
+    color: rgb(29, 89, 135);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.button {
+/*	background: url(images/button.gif) left 0;*/
+	color: #848484;
+	text-decoration: none;
+	height: 30px;
+	cursor: hand;
+}
+
+.button:hover {
+	background: url(images/button.gif) left -30px;
+	height: 30px;
+}
+
+.button span {
+/*	background:url(images/button.gif) right 0;*/
+	padding: 7px 8px 7px 0;
+	margin: 0 0 0 8px;
+	height: 16px;
+}
+
+.button:hover span {
+	background: url(images/button.gif) right -30px;
+	color: #000;
+	padding: 7px 8px 7px 0;
+	margin: 0 0 0 8px;
+	height: 16px;
+}
+
+.button2 {
+	background: url(images/button.gif) left 0;
+	color: #848484;
+	text-decoration: none;
+	height: 30px;
+	cursor: hand;
+	float: left;
+	display: inline-block;
+}
+
+.button2:hover {
+	background: url(images/button.gif) left -30px;
+	height: 30px;
+}
+
+.button2 span {
+	background:url(images/button.gif) right 0;
+	padding: 7px 8px 7px 0;
+	margin: 0 0 0 8px;
+	height: 16px;
+}
+
+.button2:hover span {
+	background: url(images/button.gif) right -30px;
+	color: #000;
+	padding: 7px 8px 7px 0;
+	margin: 0 0 0 8px;
+	height: 16px;
+}
+
+.button3 {
+	border: 1px solid rgb(163, 185, 209);
+	background: url("images/ui-bg_glass_85_dae6f4_1x400.png") repeat-x scroll 50% 50% rgb(218, 230, 244);
+	font-weight: normal;
+	color: rgb(30, 57, 91);
+	font-size: 1em;
+	position: relative;
+	padding: 0px;
+	margin-right: 0.1em;
+	text-decoration: none !important;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	overflow: visible;
+	border-radius: 2px 2px 2px 2px;
+}
+
+.button3 .button-text {
+	padding: 0.4em 1em;
+	display: block;
+	line-height: 1.4;
+	font-weight: normal;
+	color: rgb(30, 57, 91);
+	font-size: 1em;
+	cursor: pointer;
+	text-align: center;
+}
+
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	background-image: url("images/ui-icons_469bdd_256x240.png");
+}
+
+.ui-icon-search {
+    background-position: -160px -112px;
+}
+
+.ui-icon-calculator {
+    background-position: -112px -112px;
+}
+
+.toolbar {
+    display: block;
+    background-color: rgb(237, 245, 253);
+    padding: 2px;
+    height: 30px;
+    border: 1px solid rgb(166, 201, 226);
+    color: rgb(34, 34, 34);
+    margin-left: 8px;
+	margin-right: 8px;
+}

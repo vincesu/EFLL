@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.framework.entity">
+	<class
+		name="SysPermissions"
+		table="sys_permissions"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<composite-id name="Id" class="SysPermissionsPK">
+			<key-property
+				name="Roleid"
+				column="roleid"
+				type="java.lang.Long"
+			/>
+			<key-property
+				name="Moduleid"
+				column="moduleid"
+				type="java.lang.Long"
+			/>
+		</composite-id>
+
+		<property
+			name="Description"
+			column="description"
+			type="string"
+			not-null="false"
+			length="250"
+		/>
+		<property
+			name="Reserved"
+			column="reserved"
+			type="string"
+			not-null="false"
+			length="50"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

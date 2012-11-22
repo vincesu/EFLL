@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.framework.entity">
+	<class
+		name="SysEncoding"
+		table="sys_encoding"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="FieldName"
+			column="field_name"
+			type="string"
+			not-null="true"
+			length="30"
+		/>
+		<property
+			name="FieldValue"
+			column="field_value"
+			type="string"
+			not-null="true"
+			length="50"
+		/>
+		<property
+			name="CodingValue"
+			column="coding_value"
+			type="string"
+			not-null="true"
+			length="50"
+		/>
+		<property
+			name="Reserved"
+			column="reserved"
+			type="string"
+			not-null="false"
+			length="50"
+		/>
+
+
+	</class>	
+</hibernate-mapping>
